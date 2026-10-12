@@ -32,7 +32,13 @@ public class Deck {
 			cards.add(new Card(color,CardType.SKIP,-1));
 			cards.add(new Card(color,CardType.SKIP,-1));
 
+		}
+		
+		for(int i=0 ; i<4;i++) {
+			cards.add(new Card(Color.WILD, CardType.WILD_DRAW_FOUR,-1));
+			cards.add(new Card(Color.WILD, CardType.WILD,-1));
 
+			
 		}
 
 		
