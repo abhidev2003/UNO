@@ -22,7 +22,22 @@ public class Deck {
 				
 			}
 		}
+		for(Color color: colors) {
+			cards.add(new Card(color,CardType.DRAW_TWO,-1));
+			cards.add(new Card(color,CardType.DRAW_TWO,-1));
+			
+			cards.add(new Card(color,CardType.REVERSE,-1));
+			cards.add(new Card(color,CardType.REVERSE,-1));
+			
+			cards.add(new Card(color,CardType.SKIP,-1));
+			cards.add(new Card(color,CardType.SKIP,-1));
+
+
 		}
+
+		
+	}
+	
 	
 }
 
