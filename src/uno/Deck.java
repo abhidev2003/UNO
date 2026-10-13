@@ -1,5 +1,7 @@
 package uno;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Deck {
 	ArrayList<Card> cards = new ArrayList<Card>();
@@ -40,8 +42,12 @@ public class Deck {
 
 			
 		}
-
+		Collections.shuffle(cards);
 		
+		
+	}
+	public Card drawcard() {
+		return cards.remove(0);
 	}
 	
 	
