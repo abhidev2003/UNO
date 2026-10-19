@@ -1,6 +1,5 @@
 package uno;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Deck {
@@ -25,7 +24,7 @@ public class Deck {
 			}
 		}
 		for(Color color: colors) {
-			cards.add(new Card(color,CardType.DRAW_TWO,-1));
+			cards.add(new Card(color,CardType.DRAW_TWO,-1)); 
 			cards.add(new Card(color,CardType.DRAW_TWO,-1));
 			
 			cards.add(new Card(color,CardType.REVERSE,-1));
