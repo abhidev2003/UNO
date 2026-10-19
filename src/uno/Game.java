@@ -8,6 +8,12 @@ public class Game {
 	
 	ArrayList<Player> players = new ArrayList<Player>();
 	
+	public Game(){
+		Player player1 = new Player();
+		players.add(player1);
+	}
+	
+	
 	
 	void drawIntial7Cards() {
 		for(int i=0 ; i<7;i++) {
