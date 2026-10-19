@@ -10,9 +10,11 @@ public class Game {
 	
 	
 	void drawIntial7Cards() {
-		for(Player p: players) {
-			p.hand.add(deck.drawcard());
-		}
+		for(int i=0 ; i<7;i++) {
+			for(Player p: players) {
+				p.hand.add(deck.drawcard());
+			}
+	}
 	}
 	
 	
