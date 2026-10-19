@@ -14,7 +14,7 @@ public class Game {
 			for(Player p: players) {
 				p.hand.add(deck.drawcard());
 			}
-	}
+		}
 	}
 	
 	
