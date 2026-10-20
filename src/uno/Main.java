@@ -1,4 +1,5 @@
 package uno;
+import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
@@ -11,7 +12,12 @@ public class Main {
 //							   " Value "+c.value);
 //			System.out.println();
 //		}
-		Game g = new Game(4);
+		
+		int numberOfPlayers= playerCheck();
+		
+		Game g = new Game(numberOfPlayers);
+		
+		
 		g.drawIntial7Cards();
 		for(int i=0;i<g.numberOfPlayers;i++) {
 			for(Card c : g.players.get(i).hand) {
@@ -23,4 +29,16 @@ public class Main {
 
 		}
 	}
+
+	public int playerCheck() {
+		Scanner sc = new Scanner(System.in);
+		int numberOfPlayers= sc.nextInt();
+		
+		if(numberOfPlayers<2||numberOfPlayers>10) {
+			System.out.println("Must be between 2 and 10 Players");
+			playerCheck();
+		}
+		return numberOfPlayers;
+	}
 }
+	
