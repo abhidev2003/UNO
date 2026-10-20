@@ -32,10 +32,11 @@ public class Main {
 
 	public int playerCheck() {
 		Scanner sc = new Scanner(System.in);
-		int numberOfPlayers= sc.nextInt();
-		
+		int numberOfPlayers=0;
 		if(numberOfPlayers<2||numberOfPlayers>10) {
 			System.out.println("Must be between 2 and 10 Players");
+			numberOfPlayers= sc.nextInt();
+
 			playerCheck();
 		}
 		return numberOfPlayers;
