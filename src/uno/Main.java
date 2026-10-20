@@ -18,8 +18,9 @@ public class Main {
 				System.out.println("Color: "+c.color+
 								   " Type :"+c.cardType+
 								   " Value "+c.value);
-				System.out.println();
 			}
+			System.out.println("_____________________");
+
 		}
 	}
 }
