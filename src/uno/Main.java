@@ -11,15 +11,15 @@ public class Main {
 //							   " Value "+c.value);
 //			System.out.println();
 //		}
-		Game g = new Game();
+		Game g = new Game(4);
 		g.drawIntial7Cards();
-		
-		for(Card c : g.players.getFirst().hand) {
-			System.out.println("Color: "+c.color+
-							   " Type :"+c.cardType+
-							   " Value "+c.value);
-			System.out.println();
+		for(int i=0;i<g.numberOfPlayers;i++) {
+			for(Card c : g.players.get(i).hand) {
+				System.out.println("Color: "+c.color+
+								   " Type :"+c.cardType+
+								   " Value "+c.value);
+				System.out.println();
+			}
 		}
-		
 	}
 }
