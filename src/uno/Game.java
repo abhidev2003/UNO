@@ -10,6 +10,10 @@ public class Game {
 	
 	public Game(int numberOfPlayers){
 		this.numberOfPlayers=numberOfPlayers;
+		for(int i=0;i>numberOfPlayers;i++) {
+			Player player = new Player();
+			players.add(player);
+		}
 	}
 	
 	
