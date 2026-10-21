@@ -30,14 +30,15 @@ public class Main {
 		}
 	}
 
-	public int playerCheck() {
+	public static int playerCheck() {
 		Scanner sc = new Scanner(System.in);
-		int numberOfPlayers=0;
+		int numberOfPlayers;
+		System.out.println("Enter the Number Of Players");
+		numberOfPlayers= sc.nextInt();
+
 		if(numberOfPlayers<2||numberOfPlayers>10) {
 			System.out.println("Must be between 2 and 10 Players");
-			numberOfPlayers= sc.nextInt();
-
-			playerCheck();
+			return playerCheck();
 		}
 		return numberOfPlayers;
 	}
