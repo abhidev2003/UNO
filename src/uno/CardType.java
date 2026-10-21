@@ -1,5 +1,4 @@
 package uno;
-
 public enum CardType {
 	NUMBER,
 	SKIP,

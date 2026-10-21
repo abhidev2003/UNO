@@ -17,12 +17,16 @@ public class Game {
 	//Each player has a hand of data type Card.
 	
 	
+	//Constructor to add players to the ArrayList players
 	public Game(int numberOfPlayers){
 		this.numberOfPlayers=numberOfPlayers;
+		//Loop for adding all the players
 		for(int i=0;i<numberOfPlayers;i++) {
 			Player player = new Player();
 			players.add(player);
 		}
+		discardPile.add(deck.drawcard());//To initialize the first discard card.
+		drawIntial7Cards(); //Gives each players 7 cards.
 	}
 	//Function to check the Number Of Players Allowed for the Game.
 	public static int playerCheck() {
