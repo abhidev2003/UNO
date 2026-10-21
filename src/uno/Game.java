@@ -37,8 +37,10 @@ public class Game {
 
 		if(numberOfPlayers<2||numberOfPlayers>10) {
 			System.out.println("Must be between 2 and 10 Players");
+			sc.close();
 			return playerCheck();
 		}
+		sc.close();
 		return numberOfPlayers;
 	}
 	
